@@ -19,7 +19,7 @@
             <label for="tel">城市：</label>
             <input id="city" type="text" >
         </div>
-        <button class="submitBtn"></button>
+        <button @click="mainSubmit" class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
 
         <!--    弹窗提示-->
@@ -31,7 +31,17 @@
 
 <script>
     export default {
-        name: "secondary"
+        name: "secondary",
+        data(){
+            return{
+                isshow:false
+            }
+        },
+        methods:{
+            mainSubmit(){
+                this.isshow = true
+            }
+        }
     }
 </script>
 
