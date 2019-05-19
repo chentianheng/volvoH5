@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from  './views/home';
+import Choice from './views/choice'
 
 Vue.use(Router);
 
@@ -9,12 +10,12 @@ export default new Router({
     routes:[
         {
             path:'/',
-            redirect:'/home'
+            redirect:'/choice'
         },
         {
-            path:'/home',
-            name:'home',
-            component:Home
+            path:'/choice',
+            name:'choice',
+            component:Choice
         }
     ]
 })
