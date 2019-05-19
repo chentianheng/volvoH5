@@ -2,9 +2,9 @@
     <div class="container">
         <div class="headImg" ></div>
         <div class="username">{{ username }}</div>
-        <div class="userTitle">就是科技范西客</div>
-        <div class="subtitle1">手机用新款，电脑要高配</div>
-        <div class="subtitle2">你是执着于拥有酷炫装备的科技控</div>
+        <div class="userTitle">就是靠谱范西客</div>
+        <div class="subtitle1">不用担心神一般的对手</div>
+        <div class="subtitle2">只因有你这样靠谱的队友</div>
         <img class="XC40" src="../../assets/btn/矢量智能对象4.png">
         <div class="backBtn">
             <button @click="hrefChoice"class="choiceBtn">再测一次</button>
@@ -92,14 +92,14 @@
     .XC40{
         position: absolute;
         left: 1.5rem;
-        bottom: 10rem;
+        bottom: 8rem;
         width: 30%;
     }
 
     .backBtn{
         position: absolute;
         left: 1.5rem;
-        bottom: 7rem;
+        bottom: 5rem;
         border: 0.1rem solid #FFFFFF;
         padding: 0.2rem;
     }
@@ -107,7 +107,7 @@
     .nextBtn{
         position: absolute;
         left: 8rem;
-        bottom: 7rem;
+        bottom: 5rem;
         border: 0.1rem solid #FFFFFF;
         padding: 0.2rem;
     }

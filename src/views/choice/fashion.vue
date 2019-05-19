@@ -92,14 +92,14 @@
     .XC40{
         position: absolute;
         left: 1.5rem;
-        bottom: 10rem;
+        bottom: 8rem;
         width: 30%;
     }
 
     .backBtn{
         position: absolute;
         left: 1.5rem;
-        bottom: 7rem;
+        bottom: 5rem;
         border: 0.1rem solid #FFFFFF;
         padding: 0.2rem;
     }
@@ -107,7 +107,7 @@
     .nextBtn{
         position: absolute;
         left: 8rem;
-        bottom: 7rem;
+        bottom: 5rem;
         border: 0.1rem solid #FFFFFF;
         padding: 0.2rem;
     }

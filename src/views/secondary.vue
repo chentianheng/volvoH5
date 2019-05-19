@@ -21,6 +21,11 @@
         </div>
         <button class="submitBtn"></button>
         <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
+
+        <!--    弹窗提示-->
+        <div class="thxContainer" v-show="isshow">
+            <img src="../assets/btn/thx.png" alt="" height="200" width="200">
+        </div>
     </div>
 </template>
 
@@ -74,7 +79,7 @@
         border-style: none;
         width: 12rem;
         height: 1.5rem;
-        margin-top: 10rem;
+        margin-top: 9rem;
         opacity: 0.8;
     }
 
@@ -82,5 +87,16 @@
         color: #FFFFFF;
         font-size: 0.7rem;
         margin-top: 1rem;
+    }
+
+    .thxContainer{
+        display: flex;
+        position: absolute;
+        background-color: rgba(0,0,0,0.8);
+        top: 4rem;
+        width: 20rem;
+        height: 30rem;
+        justify-content: center;
+        align-items: center;
     }
 </style>

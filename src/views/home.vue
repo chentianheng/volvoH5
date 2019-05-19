@@ -3,13 +3,18 @@
             <img class="mainImg" src="../assets/home/主图_06.png" alt="mainImg"/>
             <img class="logoImg" src="../assets/home/logo_03.png" alt="logoImg"/>
             <img class="titleImg" src="../assets/home/文字.png" alt="titleImg"/>
-            <p class="footer">开始寻找范西客之旅</p>
+            <p @click="hrefChoice" class="footer">开始寻找范西客之旅</p>
         </div>
 </template>
 
 <script>
     export default {
-        name: "home"
+        name: "home",
+        methods:{
+            hrefChoice(){
+                this.$router.push({ path:'/choice' })
+            }
+        }
     }
 </script>
 

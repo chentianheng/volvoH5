@@ -10,14 +10,29 @@
         <label for="tel">电话：</label>
         <input id="tel" type="number">
     </div>
-    <button class="submitBtn"></button>
+    <button @click="mainSubmit" class="submitBtn"></button>
     <p class="submitFooter">*活动详情敬请咨询沃尔沃当地授权经销商</p>
+
+<!--    弹窗提示-->
+    <div class="thxContainer" v-show="isshow">
+        <img src="../assets/btn/thx.png" alt="" height="200" width="200">
+    </div>
 </div>
 </template>
 
 <script>
     export default {
-        name: "main"
+        name: "main",
+        data(){
+            return{
+                isshow:false
+            }
+        },
+        methods:{
+            mainSubmit(){
+                this.isshow = true
+            }
+        }
     }
 </script>
 
@@ -74,4 +89,17 @@
         font-size: 0.7rem;
         margin-top: 1rem;
     }
+
+    .thxContainer{
+        display: flex;
+        position: absolute;
+        background-color: rgba(0,0,0,0.8);
+        top: 4rem;
+        width: 20rem;
+        height: 30rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 </style>
