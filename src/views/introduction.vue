@@ -1,13 +1,25 @@
 <template>
     <div class="container">
-        <img class="btn1" src="../assets/introduction/btn1.png" alt="btn1">
-        <img class="btn2" src="../assets/introduction/btn2.png" alt="btn2">
+        <img @click="hrefMain" class="btn1" src="../assets/introduction/btn1.png" alt="btn1">
+        <img @click="hrefSecondary" class="btn2" src="../assets/introduction/btn2.png" alt="btn2">
     </div>
 </template>
 
 <script>
     export default {
-        name: "introduction"
+        data(){
+            return{
+
+            }
+        },
+        methods:{
+            hrefMain(){
+                this.$router.push({ path:'/main' })
+            },
+            hrefSecondary(){
+                this.$router.push({ path:'/secondary' })
+            }
+        }
     }
 </script>
 

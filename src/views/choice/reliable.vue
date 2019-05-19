@@ -7,10 +7,10 @@
         <div class="subtitle2">你是执着于拥有酷炫装备的科技控</div>
         <img class="XC40" src="../../assets/btn/矢量智能对象4.png">
         <div class="backBtn">
-            <button class="choiceBtn">再测一次</button>
+            <button @click="hrefChoice"class="choiceBtn">再测一次</button>
         </div>
         <div class="nextBtn">
-            <button class="choiceBtn">与沃同行</button>
+            <button @click="hrefIntroduction" class="choiceBtn">与沃同行</button>
         </div>
 
     </div>
@@ -21,6 +21,14 @@
         data(){
             return{
                 username:'范西客'
+            }
+        },
+        methods:{
+            hrefChoice(){
+                this.$router.push({ path:'/choice' })
+            },
+            hrefIntroduction(){
+                this.$router.push({ path:'/introduction' })
             }
         }
     }

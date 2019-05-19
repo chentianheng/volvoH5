@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from  './views/home';
 import Choice from './views/choice/choice'
-import Introduction from './views/intrduction'
+import Introduction from './views/introduction'
 import Main from './views/main'
 import Secondary from './views/secondary'
 import Fashion from './views/choice/fashion'

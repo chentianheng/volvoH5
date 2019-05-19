@@ -2,9 +2,9 @@
     <div class="container">
 
         <img class="title" src="../../assets/choice/标题.png" alt="title"/>
-        <img class="btn1" src="../../assets/choice/btn1.png" alt="btn1"/>
-        <img class="btn2" src="../../assets/choice/btn2.png" alt="btn2"/>
-        <img class="btn3" src="../../assets/choice/btn3.png" alt="btn3"/>
+        <img @click="hrefFashion" class="btn1" src="../../assets/choice/btn1.png" alt="btn1"/>
+        <img @click="hrefTech" class="btn2" src="../../assets/choice/btn2.png" alt="btn2"/>
+        <img @click="hrefReliable" class="btn3" src="../../assets/choice/btn3.png" alt="btn3"/>
 
         <img class="footer" src="../../assets/home/主图_06.png" height="50" width="50"/>
     </div>
@@ -13,7 +13,22 @@
 
 <script>
     export default {
-        name: "choice"
+        data(){
+            return{
+
+            }
+        },
+        methods:{
+            hrefFashion(){
+                this.$router.push({ path:'/fashion' })
+            },
+            hrefTech(){
+                this.$router.push({ path:'/tech' })
+            },
+            hrefReliable(){
+                this.$router.push({ path:'/reliable' })
+            }
+        }
     }
 </script>
 
